@@ -24,3 +24,4 @@ yarn-error.log*
 /functions
 ui-debug.log
 .env
+.env.production
