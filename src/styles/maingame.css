@@ -1,0 +1,86 @@
+#end {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+
+  font-size: 3rem;
+  font-weight: bold;
+
+  background-color: var(--white-contrast-transparent);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: var(--big-border-radius);
+}
+
+#end button {
+  margin: 4vh;
+  height: 15%;
+  width: 20%;
+
+  border-radius: var(--medium-border-radius);
+  border: none;
+
+  background-color: var(--mild-blue);
+  color: var(--white);
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    text-shadow: 0px 0px 1px var(--white);
+    background-color: var(--mild-dark-blue);
+
+    transition: all var(--animation-speed) ease-in;
+    cursor: pointer;
+  }
+}
+
+.victory {
+  color: var(--golf-green);
+  animation: victoryAnimation 4s infinite;
+  border: 2px solid var(--golf-green);
+}
+
+@keyframes victoryAnimation {
+  0% {
+    text-shadow: 0px 0px 6px var(--golf-green);
+  }
+  50% {
+    text-shadow: 0px 0px 12px var(--golf-green);
+  }
+  100% {
+    text-shadow: 0px 0px 6px var(--golf-green);
+  }
+}
+
+.defeat {
+  color: var(--mild-red);
+  animation: defeatAnimation 4s infinite;
+  border: 2px solid var(--mild-red);
+}
+
+@keyframes defeatAnimation {
+  0% {
+    text-shadow: 0px 0px 6px var(--mild-red);
+  }
+  50% {
+    text-shadow: 0px 0px 12px var(--mild-red);
+  }
+  100% {
+    text-shadow: 0px 0px 6px var(--mild-red);
+  }
+}
+
+#game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline-color: var(--golf-green);
+  }
+}

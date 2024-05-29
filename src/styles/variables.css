@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  font-family: "Inter";
+
+  --animation-speed: 0.1s;
+  --popup-speed: 0.2s;
+
+  --list-blue: #f3f8fd;
+
+  --mild-blue: #abcdf4;
+  --mild-dark-blue: #77aff0;
+  --dark-blue: #5c9ae0;
+  --black-blue: #3377dd;
+  --pale-blue: #e3f6f9;
+  --mild-pale-blue: #c0daf9;
+  --mild-cyan-blue: #bef3f0;
+  --cyan-blue: #abf4f0;
+  --mild-gray: #9a9a9a;
+  --gray: #757575;
+
+  --button-color: #526682;
+
+  --chat-text-color: #1f2a2e;
+  --chat-date-color: #6c6a77;
+
+  --player1-color: #7a7de4;
+  --player2-color: #e59e7b;
+
+  --mild-purple: #be8cd7;
+  --dark-purple: #9255b1;
+
+  --pale-golf-green: #9fcc80;
+  --golf-green: #7ea36b;
+  --dark-golf-green: #5c774e;
+
+  --mild-red: #ae5a5a;
+
+  --white-contrast: #f9fbfd;
+  --light-gray: #eef3f8;
+  --white-contrast-transparent: #f9fbfda2;
+  --white: #fff;
+  --black: #000000;
+  --error: #bc1818;
+
+  --blur: 5px;
+
+  --google-hover: #f8fcff;
+  --menu-button-hover: #f1f7ff;
+
+  --big-border-radius: 24px;
+  --medium-border-radius: 16px;
+  --small-border-radius: 6px;
+
+  --big-padding: 24px;
+  --medium-padding: 16px;
+
+  --header-1: 3rem;
+  --header-2: 2rem;
+  --header-3: 1.4rem;
+
+  --button-scale: 1.05;
+  --rotation: rotate(4deg);
+  --translate: translate(4px);
+  --scale: 1.1;
+}

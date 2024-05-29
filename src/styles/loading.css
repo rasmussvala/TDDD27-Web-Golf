@@ -1,0 +1,41 @@
+.spinner_nOfF {
+  fill: #000; /* Change fill color if needed */
+  animation: spinner_qtyZ 2s cubic-bezier(0.36, 0.6, 0.31, 1) infinite;
+}
+
+.spinner_fVhf {
+  fill: #000; /* Change fill color if needed */
+  animation-delay: -0.5s;
+}
+
+.spinner_piVe {
+  fill: #000; /* Change fill color if needed */
+  animation-delay: -1s;
+}
+
+.spinner_MSNs {
+  fill: #000; /* Change fill color if needed */
+  animation-delay: -1.5s;
+}
+
+@keyframes spinner_qtyZ {
+  0% {
+    r: 0;
+  }
+  25% {
+    r: 3px;
+    cx: 4px;
+  }
+  50% {
+    r: 3px;
+    cx: 12px;
+  }
+  75% {
+    r: 3px;
+    cx: 20px;
+  }
+  100% {
+    r: 0;
+    cx: 20px;
+  }
+}

@@ -1,0 +1,726 @@
+@import "variables.css";
+
+body {
+  background-color: var(--pale-blue);
+  margin: 0;
+  padding: 0;
+}
+
+.card-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.start-card {
+  width: 70vw;
+  height: 80vh;
+  padding: var(--big-padding);
+
+  background-color: var(--white);
+  border-radius: var(--big-border-radius);
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.start-box {
+  width: 40vw;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--header-1);
+  font-weight: bold;
+  color: var(--mild-blue);
+  animation: headerAnimation 8s infinite;
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--header-2);
+  font-weight: bold;
+  color: var(--mild-blue);
+  animation: headerAnimation 10s infinite;
+  &:hover {
+    text-shadow: 0px 0px 1px var(--mild-blue);
+    transition: all var(--animation-speed) ease-out;
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    text-shadow: 0px 0px 1px var(--mild-blue);
+    color: var(--mild-blue);
+  }
+  50% {
+    text-shadow: 0px 0px 4px var(--mild-blue);
+    color: var(--mild-dark-blue);
+  }
+  100% {
+    text-shadow: 0px 0px 1px var(--mild-blue);
+    color: var(--mild-blue);
+  }
+}
+
+.input-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-input-google-button {
+  width: 80%;
+  height: 8vh;
+
+  border: 1px solid var(--mild-blue);
+  border-radius: var(--small-border-radius);
+  background-color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    background-color: var(--google-hover);
+    cursor: pointer;
+
+    color: var(--mild-dark-blue);
+    border-color: var(--mild-dark-blue);
+
+    transition: all var(--animation-speed) ease-in;
+  }
+}
+
+.input-box h2 {
+  width: 95%;
+}
+
+.input-box p {
+  margin: 0;
+  margin-left: 2vw;
+
+  font-size: 0.6rem;
+  min-height: 0.7rem;
+  color: var(--error);
+  width: 100%;
+  text-align: left;
+  text-shadow: 0px 0px 1px var(--error);
+}
+
+.input-field {
+  width: 90%;
+  height: 4vw;
+  margin-top: 0.5vw;
+  border: 1px solid var(--mild-gray);
+  border-radius: var(--small-border-radius);
+  color: var(--black);
+  padding: 0 1vw;
+  background-color: var(--white-contrast);
+}
+
+input-field::placeholder {
+  color: var(--mild-gray);
+}
+
+.input-field:focus {
+  outline-color: var(--mild-blue);
+}
+
+.start-button-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  padding-top: 0.5vh;
+}
+
+.text-enter-button {
+  height: 6vh;
+  color: var(--mild-blue);
+  background-color: #ffffff00;
+  border: none;
+  border-radius: var(--medium-border-radius);
+  width: fit-content;
+  margin-right: 3vw;
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    color: var(--mild-dark-blue);
+    cursor: pointer;
+    transition: all var(--animation-speed) ease-in;
+  }
+}
+
+.enter-button {
+  width: 12vw;
+  height: 6vh;
+
+  background-color: var(--mild-blue);
+  color: var(--white);
+  border-radius: var(--small-border-radius);
+  border: none;
+  margin-right: 1vw;
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    background-color: var(--mild-dark-blue);
+    cursor: pointer;
+    transition: all var(--animation-speed) ease-in;
+    transform: scale(var(--button-scale));
+  }
+}
+
+.stroke {
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+  color: var(--mild-blue);
+
+  height: fit-content;
+  justify-content: center;
+  cursor: default;
+}
+
+.stroke hr {
+  height: 0.1px;
+  width: 40%;
+  border: 0.1px solid var(--mild-blue);
+  background-color: var(--mild-blue);
+}
+
+.card {
+  width: 70vw;
+  height: 80vh;
+  padding: var(--big-padding);
+
+  background-color: var(--white);
+
+  background-image: url("../../public/img/card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: var(--big-border-radius);
+
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.233);
+}
+
+.box-wrapper {
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.global-box-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu-box {
+  margin-top: 6vw;
+
+  width: 40vw;
+  height: 100%;
+}
+
+.col-button-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5vh;
+}
+
+.menu-button {
+  width: 80%;
+  height: 8vh;
+  font-size: 1rem;
+
+  background-color: var(--white-contrast);
+  color: var(--button-color);
+
+  border-radius: var(--medium-border-radius);
+  border: 1px solid var(--mild-blue);
+
+  margin-right: 1vw;
+  margin-top: 2vw;
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    background-color: var(--menu-button-hover);
+    color: var(--dark-blue);
+
+    cursor: pointer;
+    transition: all var(--animation-speed) ease-in;
+    transform: scale(var(--button-scale));
+  }
+}
+
+.header-box {
+  width: 100%;
+  display: flex;
+}
+
+.header-box h1 {
+  text-align: center;
+  width: 100%;
+  transition: all var(--animation-speed) ease-in;
+}
+
+.half-w-box {
+  margin-top: 2vh;
+
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.sixty-w-box {
+  width: 60%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.sign-in-h2-text {
+  margin-bottom: 4%;
+}
+
+.enter-button-box {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.top-margin {
+  margin-top: 6vh;
+}
+
+.sign-out-button {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+
+  margin: 1vh 0;
+}
+
+.sign-out-button svg {
+  transition: all var(--animation-speed) ease-out;
+}
+
+.sign-out-button:hover svg {
+  fill: var(--mild-dark-blue);
+  filter: drop-shadow(0px 0px 1px var(--mild-dark-blue));
+  transition: all var(--animation-speed) ease-in;
+}
+
+#join-text {
+  color: var(--gray);
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: none;
+
+  width: calc(100% - 2vw);
+  height: fit-content;
+  margin-right: 2vw;
+}
+
+.game-content-wrapper {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark-blue);
+}
+
+.game-content-box {
+  width: calc(100% - 4vh);
+  height: calc(100% - 4vh);
+  margin: 2vh;
+
+  display: flex;
+}
+
+.game-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.game-bar {
+  width: calc(100% - 2 * 1vh);
+  height: 8vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 1vh;
+}
+
+.game-box {
+  background-color: var(--mild-blue);
+  width: calc(100% - 2 * 1vh);
+  height: calc(100% - 8vh - 1vh);
+  margin: 1vh;
+  margin-bottom: 0;
+
+  border-radius: var(--small-border-radius);
+  overflow: hidden;
+}
+
+.chat-box {
+  width: 30vw;
+  height: 100%;
+  background-color: var(--white);
+  border-radius: var(--small-border-radius);
+  overflow-x: hidden;
+}
+
+.chat {
+  height: calc(100% - 25vh);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+.chat-messege {
+  width: calc(90% - 2 * 1vh);
+  min-height: fit-content;
+  font-size: 1rem;
+
+  color: var(--chat-text-color);
+  border-radius: var(--small-border-radius);
+
+  padding: 1vh;
+  margin: 1vh 0;
+
+  display: flex;
+  justify-content: left;
+}
+
+.chat-messege-content {
+  width: 100%;
+}
+
+.chat-messege-name-box {
+  margin: 0;
+  padding: 0;
+  font-size: 0.5rem;
+  height: 1rem;
+  display: flex;
+  align-items: end;
+}
+
+.chat-messege-name {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.chat-messege-date {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.8rem;
+  margin-left: 0.8rem;
+
+  color: var(--chat-date-color);
+}
+
+.chat-messege-text {
+  margin: 0;
+  width: calc(100% - 2rem - 1vh);
+
+  overflow-wrap: break-word;
+  height: fit-content;
+}
+
+.chat-icon {
+  background-color: var(--white);
+
+  width: 2rem;
+  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
+
+  margin-right: 1vh;
+
+  border-radius: var(--big-border-radius);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.chat-input {
+  box-shadow: 0 -5px 5px 3px var(--light-gray);
+
+  width: 100%;
+  height: fit-content;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: var(--small-border-radius);
+  border-bottom-right-radius: var(--small-border-radius);
+}
+
+.chat-input-field {
+  width: 90%;
+
+  height: 15vh;
+  resize: none;
+  margin: 2%;
+  border-radius: var(--small-border-radius);
+  padding: 1vh;
+  border: none;
+  background-color: var(--light-gray);
+
+  &:focus {
+    outline-color: var(--mild-blue);
+  }
+}
+
+.chat-button-box {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 5%;
+}
+
+.chat-button {
+  width: 50%;
+  height: 1.4rem;
+  background-color: var(--mild-blue);
+  border-radius: var(--small-border-radius);
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    background-color: var(--mild-dark-blue);
+    transition: all var(--animation-speed) ease-in;
+  }
+}
+
+.lobby-box {
+  background-color: var(--mild-blue);
+  margin-right: 1vh;
+
+  width: 30%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  border-radius: var(--small-border-radius);
+}
+
+.lobby-text {
+  width: calc(80% - 1vw);
+  height: 100%;
+
+  font-size: 1.2rem;
+  color: var(--white);
+  text-shadow: 0px 0px 1px var(--white);
+
+  margin-right: 2vh;
+
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+}
+
+.players-text {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 1000;
+
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+}
+
+.lock-box {
+  width: 6vh;
+  height: 6vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 1vh;
+}
+
+.lock-box svg {
+  transition: all var(--animation-speed) ease-out;
+  transform: scale(0.9);
+}
+
+.lock-box:hover .can-click-lock {
+  transition: all var(--animation-speed) ease-in;
+  filter: drop-shadow(0px 0px 1px var(--white));
+  transform: scale(var(--scale));
+  cursor: pointer;
+}
+
+.admin-box {
+  width: 60%;
+  height: 100%;
+
+  background-color: var(--mild-blue);
+  font-size: 1.2rem;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  border-radius: var(--small-border-radius);
+}
+
+.block {
+  padding: 0;
+
+  margin-right: 1vh;
+  width: 8vh;
+  height: 100%;
+  background-color: var(--mild-blue);
+
+  align-items: center;
+  justify-content: left;
+  border-radius: var(--small-border-radius);
+  border: none;
+  cursor: pointer;
+
+  transition: all var(--animation-speed) ease-out;
+
+  &:hover {
+    background-color: var(--mild-dark-blue);
+    transition: all var(--animation-speed) ease-in;
+    transform: scale(var(--scale));
+  }
+}
+
+.block svg {
+  fill: var(--white);
+  transition: all var(--animation-speed) ease-out;
+  transform: scale(var(--scale));
+}
+
+.block:hover svg {
+  transition: all var(--animation-speed) ease-in;
+  fill: var(--white);
+  filter: drop-shadow(0px 0px 1px var(--white));
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+}
+
+#help-controls {
+  width: 80%;
+  height: 80%;
+
+  filter: invert(0.8);
+
+  background-image: url("../../public/img/how-to-play.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#help-goal {
+  width: 80%;
+  height: 80%;
+
+  background-image: url("../../public/img/goal.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.warning-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.warning-popup-content {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: var(--small-border-radius);
+  text-align: center;
+}

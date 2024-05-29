@@ -1,0 +1,43 @@
+.loading-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-card {
+  width: 80%;
+  height: 80%;
+
+  border-radius: var(--small-border-radius);
+}
+
+.loading-content {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 6vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-content h2 {
+  margin-bottom: 6vh;
+}
+
+@keyframes countdownAnimation {
+  0% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.countdown {
+  animation: countdownAnimation 0.2s forwards;
+}

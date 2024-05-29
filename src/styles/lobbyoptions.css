@@ -1,0 +1,106 @@
+.lobby-options-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.lobby-options-admin,
+.lobby-options-lobby {
+  display: flex;
+  color: var(--dark-blue);
+  margin-left: 2vw;
+}
+
+.lobby-options-admin div,
+.lobby-options-lobby div {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: var(--black-blue);
+  width: 10%;
+}
+
+.current-users-board-wrapper {
+  margin-top: 1vh;
+  width: 100%;
+  height: 100%;
+}
+
+.current-users-board-wrapper h2 {
+  height: 3rem;
+  margin-bottom: 1vw;
+  background-color: var(--pale-blue);
+}
+
+.current-users-board-wrapper ul {
+  width: 100%;
+  text-shadow: 0px 0px 2px var(--mild-blue);
+}
+
+.current-users-board-wrapper #current-users-board-player1 {
+  color: var(--player1-color);
+}
+
+.current-users-board-wrapper #current-users-board-player2 {
+  color: var(--player2-color);
+}
+
+.current-users-board-wrapper li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-users-board-wrapper li:not(.current-users-board-headers) {
+  background-color: var(--white-contrast);
+  height: 4rem;
+  color: var(--mild-dark-blue);
+}
+
+.current-users-board-wrapper li:nth-child(even) {
+  background-color: var(--white);
+}
+
+.current-users-board-wrapper div {
+  width: calc(80% / 2);
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current-users-board-headers {
+  display: flex;
+  height: 2rem;
+  font-weight: bold;
+  color: var(--black-blue);
+}
+
+.current-users-board-wrapper button {
+  width: 5vw;
+  height: 6vh;
+
+  border-radius: var(--small-border-radius);
+  border: 0;
+
+  transition: all var(--animation-speed) ease-out;
+}
+
+.is-admin button {
+  cursor: pointer;
+
+  background-color: var(--mild-blue);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--mild-dark-blue);
+    text-shadow: 0px 0px 3px var(--white);
+    transition: all var(--animation-speed) ease-in;
+    transform: scale(var(--button-scale));
+  }
+}
+
+.is-not-admin button {
+  cursor: auto;
+  background-color: var(--pale-blue);
+  color: var(--white);
+}
