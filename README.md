@@ -30,8 +30,9 @@ To be able to run the code on your own machine, you need to take the following s
 
 1. **Clone the Repository**: `git clone https://gitlab.liu.se/rassv453/tddd27-aweb.git`
 2. **Install Dependencies**: `npm install`
-3. **Set Up Environment Variables**: Create a **.env** file in the root of the project directory and add your Firebase API Key (It can be found at [Firebase Console](https://console.firebase.google.com/u/0/project/tddd27-aweb/settings/general/web:MDM3MjZlN2MtMmEyYy00MTY4LThhODYtOGRkNzEyZTg5ZWZk), but you need access). Then add the following line in your **.env** `REACT_APP_API_KEY=your_api_key_here`
-4. **Run the Development Server**: `npm start`
+3. **Set Up Environment Variables**: Create a **.env** file in the root of the project directory and add your Firebase API Key (It can be found at [Firebase Console](https://console.firebase.google.com/u/0/project/tddd27-aweb/settings/general/web:MDM3MjZlN2MtMmEyYy00MTY4LThhODYtOGRkNzEyZTg5ZWZk), but you need access). Then add the following line in your **.env**
+4. `REACT_APP_API_KEY=your_api_key_here`
+5. **Run the Development Server**: `npm start`
 
 ## Images of the Web App
 ![photo-collage png](https://github.com/rasmussvala/Web-Golf/assets/91534734/d67b9818-27fc-40f7-837b-c242129ed1d5)
